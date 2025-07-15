@@ -1,9 +1,9 @@
 # Makefile for protobuf generation
 
 # Directories
-PROTO_ROOT := protos/proto
+PROTO_ROOT := proto
 PROTO_DIR := $(PROTO_ROOT)/sso
-GEN_DIR := protos/gen/go/
+GEN_DIR := ./gen/go/
 
 # Protobuf compiler
 PROTOC := protoc
