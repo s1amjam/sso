@@ -19,7 +19,7 @@ GO_GRPC_OPT := --go-grpc_opt=paths=source_relative
 PROTO_FILES := $(wildcard $(PROTO_DIR)/*.proto)
 GO_GEN_FILES := $(patsubst $(PROTO_DIR)/%.proto,$(GEN_DIR)/%.pb.go,$(PROTO_FILES))
 
-.PHONY: all clean proto
+.PHONY: proto
 
 proto: $(GO_GEN_FILES)
 
