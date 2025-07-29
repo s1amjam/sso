@@ -96,7 +96,7 @@ func (a *Auth) Login(ctx context.Context, email string, password string, appID i
 	return token, nil
 }
 
-func (a *Auth) RegisterNewUser(ctx context.Context, email string, password string) (int64, error) {
+func (a *Auth) Register(ctx context.Context, email string, password string) (int64, error) {
 	const op = "auth.registerNewUser"
 
 	log := a.log.With(slog.String("op", op))
